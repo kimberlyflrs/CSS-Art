@@ -1,0 +1,163 @@
+h1{
+margin: auto;
+text-align: center;
+}
+
+
+.bg{
+  background: linear-gradient(0deg, #124878, #082238);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position:absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index:1;
+  overflow: hidden;
+  border: black;
+  border-style: solid;
+}
+
+
+
+.star{
+  background-color: white;
+  height:5px;
+  width:5px;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .5;
+  animation: twinkle 3s infinite;
+
+}
+
+@keyframes twinkle {
+  0%{
+    opacity:.5;
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100%{
+    opacity:.5;
+  }
+}
+
+.s1{
+  top:100px;
+  left:300px;
+  animation-delay: 2s;
+}
+
+.s2{
+  top:200px;
+  left:150px;
+  animation-delay: 1s;
+}
+
+.s3{
+  top:250px;
+  left:250px;
+  animation-delay: 2s;
+}
+
+.s4{
+  top:235px;
+  left:58px;
+}
+.s5{
+  top:170px;
+  left:350px;
+}
+.s6{
+  top:50px;
+  left:200px;
+  animation-delay: 3s;
+}
+
+.moon{
+  background-color: transparent;
+  height:50px;
+  width: 50px;
+  top: 100px;
+  left: 80px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 18px 5px white;
+}
+
+.moonlight{
+  background-color: transparent;
+  height:15px;
+  width: 15px;
+  top: 120px;
+  left: 130px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0px 0px 80px 20px white;
+}
+
+.wave{
+    position: absolute;
+    background: url(wave.png);
+    height:100px;
+    width: 100%;
+    background-size: 400px 100px;
+    bottom:0;
+    animation: animate 7s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+      background-position-x:0
+    }
+    100%{
+      background-position: 400px;
+    }
+}
+
+.wave2{
+    position: absolute;
+    background: url(wave.png);
+    height:100px;
+    width: 100%;
+    background-size: 400px 100px;
+    bottom:10px;
+    opacity: .5;
+    animation-delay: -5s;
+    animation: animate2 5s linear infinite;
+}
+
+@keyframes animate2 {
+    0%{
+      background-position-x:0
+    }
+    100%{
+      background-position: -400px;
+    }
+}
+
+.wave3{
+    position: absolute;
+    background: url(wave.png);
+    height:100px;
+    width: 100%;
+    background-size: 400px 100px;
+    bottom:5px;
+    opacity: .7;
+    animation-delay: -5s;
+    animation: animate3 5s linear infinite;
+}
+
+@keyframes animate3 {
+    0%{
+      background-position-x:0
+    }
+    100%{
+      background-position: -400px;
+    }
+}
