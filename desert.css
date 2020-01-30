@@ -1,0 +1,150 @@
+.desertbg{
+  background: #f0b44d;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  position:absolute;
+  margin:auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  z-index:1;
+  overflow: hidden;
+  border: black;
+  border-style: solid;
+}
+
+.cloud{
+  position:absolute;
+  background: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  top: 50px;
+  left: 150px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.cloud::before{
+  content: "";
+  position: absolute;
+  background:white;
+  height: 15px;
+  width: 40px;
+  left: -20px;
+  top: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.cloud::after{
+  content: "";
+  position: absolute;
+  background:white;
+  height: 15px;
+  width: 40px;
+  left: 5px;
+  top: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.c2{
+  position:absolute;
+  background: white;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  top: 150px;
+  left: 280px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.c2::before{
+  content: "";
+  position: absolute;
+  background:white;
+  height: 15px;
+  width: 40px;
+  left: -20px;
+  top: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.c2::after{
+  content: "";
+  position: absolute;
+  background:white;
+  height: 15px;
+  width: 40px;
+  left: 5px;
+  top: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+
+
+.cactus{
+  position: absolute;
+  height: 200px;
+  width: 40px;
+  border-radius: 20px;
+  background: green;
+  top: 100px;
+  left: 200px;
+  border
+}
+
+.cactusright{
+  position:absolute;
+  background: green;
+  width: 50px;
+  height: 20px;
+  top: 50px;
+  left: 30px;
+  border-radius: 20px;
+}
+
+.cactusright::after{
+  content:"";
+  position: absolute;
+  background: green;
+  width: 20px;
+  height: 40px;
+  left: 30px;
+  bottom: 5px;
+  border-radius: 20px;
+}
+
+.cactusleft{
+  position:absolute;
+  background: green;
+  width: 50px;
+  height: 20px;
+  top: 85px;
+  right: 25px;
+  border-radius: 20px;
+}
+
+.cactusleft::after{
+  content:"";
+  position: absolute;
+  background: green;
+  width: 20px;
+  height: 40px;
+  bottom: 2px;
+  border-radius: 20px;
+}
+
+.sand{
+  position: absolute;
+  height: 150px;
+  width: 400px;
+  bottom: 0;
+  background: #ba985f;
+}
