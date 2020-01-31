@@ -1,5 +1,5 @@
 .desertbg{
-  background: #f0b44d;
+  background: #478ecc;
   height: 400px;
   width: 400px;
   border-radius: 50%;
@@ -13,6 +13,19 @@
   overflow: hidden;
   border: black;
   border-style: solid;
+  animation: night 20s linear infinite;
+}
+
+@keyframes night {
+  0%{
+    background: #478ecc;
+    }
+  50%{
+    background: #212963;
+  }
+  100%{
+    background:#478ecc;
+  }
 }
 
 .cloud{
@@ -25,6 +38,7 @@
   left: 150px;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+  animation: time 20s linear infinite;
 }
 
 .cloud::before{
@@ -88,6 +102,17 @@
 }
 
 
+@keyframes time{
+  0%{
+  }
+  50%{
+    opacity:0;
+  }
+  100%{
+
+  }
+}
+
 
 .cactus{
   position: absolute;
@@ -97,7 +122,7 @@
   background: green;
   top: 100px;
   left: 200px;
-  border
+  animation: nightcactus 20s linear infinite;
 }
 
 .cactusright{
@@ -108,6 +133,7 @@
   top: 50px;
   left: 30px;
   border-radius: 20px;
+  animation: nightcactus 20s linear infinite;
 }
 
 .cactusright::after{
@@ -119,6 +145,7 @@
   left: 30px;
   bottom: 5px;
   border-radius: 20px;
+  animation: nightcactus 20s linear infinite;
 }
 
 .cactusleft{
@@ -129,6 +156,7 @@
   top: 85px;
   right: 25px;
   border-radius: 20px;
+  animation: nightcactus 20s linear infinite;
 }
 
 .cactusleft::after{
@@ -139,7 +167,22 @@
   height: 40px;
   bottom: 2px;
   border-radius: 20px;
+  animation: nightcactus 20s linear infinite;
 }
+
+@keyframes nightcactus {
+  0%{
+    background: green;
+    }
+  50%{
+    background: #1d4d2e;
+  }
+  100%{
+    background:green;
+  }
+}
+
+
 
 .sand{
   position: absolute;
@@ -147,4 +190,18 @@
   width: 400px;
   bottom: 0;
   background: #ba985f;
+  animation: nightsand 20s linear infinite;
+}
+
+
+@keyframes nightsand {
+  0%{
+    background: #ba985f;
+    }
+  50%{
+    background: #52432a;
+  }
+  100%{
+    background:#ba985f;
+  }
 }
